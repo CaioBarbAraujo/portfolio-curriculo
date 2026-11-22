@@ -3,622 +3,939 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Caio Araujo</title>
+    <meta name="description" content="Portfólio de Caio Barbosa de Araujo — Analista de Dados Financeiros, Business Intelligence (Power BI, Qlik Sense), SQL, Python, ETL e Finanças Corporativas.">
+    <title>Caio Araujo | Analista de Dados Financeiros & Business Intelligence</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="shortcut icon" type="imagex/png" href="./css/img/Gunz-3.png">
-
+    <link rel="shortcut icon" type="image/png" href="./css/img/Gunz-3.png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <section id="header">
-        <a class="header-title" href="/">
-            <h1>Caio Araujo</h1>
-        </a>
-        
-        <nav class="navbar">
-            <button class="menu-hamburguer"></button>
+    <!-- Navbar -->
+    <header id="header">
+        <div class="container header-container">
+            <a class="header-title" href="#person">
+                <span class="logo-badge"><i class="fa-solid fa-chart-line"></i></span>
+                <div class="logo-text">
+                    <h1>Caio Araujo</h1>
+                    <span>Data & Finance Analytics</span>
+                </div>
+            </a>
+            
+            <nav class="navbar">
+                <button class="menu-hamburguer" aria-label="Abrir menu de navegação"></button>
 
-            <ul class="navbar-links">
-                <li><a href="#person">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#certificat">Certificados</a></li>
-                <li><a href="#contacts">Contatos</a></li>
-            </ul>
-        </nav>
-    </section>
-    <!-- End Header -->
-
-    <!-- Person -->
-    <section id="person">
-
-        <div class="person-content">
-
-            <div class="person-name">
-                <h1>Olá, <span></span></h1>
-                <h1>Meu nome é <span></span></h1>
-                <h1>Caio Araujo <span></span></h1>
-            </div>
-
-            <div class="stacks-content">
-
-                <h3>Techs :</h3>
-                
-                <ul class="stacks">
+                <ul class="navbar-links">
+                    <li><a href="#person">Início</a></li>
+                    <li><a href="#about">Especialidades</a></li>
+                    <li><a href="#experience">Trajetória</a></li>
+                    <li><a href="#projects">Projetos & BI</a></li>
+                    <li><a href="#certificat">Certificações</a></li>
+                    <li><a href="#contacts">Contato</a></li>
                     <li>
-                        <div data="POWER BI">
-                            <img src="./svg/powerBi-icon.svg" alt="powerBi-icon">
-                        </div>
-                    </li>
-                    <li>
-                        <div data="POSTGRESQL">
-                            <img src="./svg/postgresql-icon.svg" alt="postgresql-icon">
-                        </div>
-                    </li>
-                    <li>
-                        <div data="SQL-SERVER">
-                            <img src="./svg/sqlServer-Icon.svg" alt="sqlServer-icon">
-                        </div>
-                    </li>                     
-                    <li>
-                        <div data="PYTHON">
-                            <img src="./svg/python-icon.svg" alt="python-icon">
-                        </div>
-                    </li>
-                    <li>
-                        <div data="AWS">
-                            <img src="./svg/AWS-icon.svg" alt="AWS-icon">
-                        </div>
-                    </li>
-                    <li>
-                        <div data="QLIK">
-                            <img src="./svg/qlik-icon.png" alt="qlik-icon">
-                        </div>
-                    </li>
-                    <li>
-                        <div data="MYSQL">
-                            <img src="./svg/mysql-icon.svg" alt="mysql-icon">
-                        </div>
+                        <a href="./public/document/CV CaioAraujo.pdf" download="CV-Caio-Araujo.pdf" class="nav-cta-btn">
+                            <i class="fa-solid fa-file-arrow-down"></i> Currículo
+                        </a>
                     </li>
                 </ul>
-                
-            </div>
-
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema claro e escuro" title="Alternar tema claro/escuro">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </nav>
         </div>
+    </header>
 
-        <div class="person-background">
-            <div class="wrapper-profile-photo">
-              <img class="profile-photo" src="./css/img/caio2.png" alt="foto-caioaraujo">
+    <!-- Hero / Person Section -->
+    <section id="person">
+        <div class="hero-bg-grid"></div>
+        <div class="container hero-container">
+            <div class="person-content">
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    Analista de Dados Financeiros • Business Intelligence • FP&A & ETL
+                </div>
+
+                <div class="person-name">
+                    <h2>Transformando Dados Financeiros e Operacionais em <span class="text-gradient">Decisões Estratégicas</span></h2>
+                </div>
+
+                <p class="hero-description">
+                    Olá, sou <strong>Caio Barbosa de Araujo</strong>. Graduado em <strong>Engenharia de Software</strong>, pós-graduado em <strong>Ciência de Dados e Big Data (PUC Minas)</strong> e graduando em <strong>Ciências Contábeis</strong>. Especialista em conectar engenharia de dados (SQL, Python, ETL, AWS) e inteligência financeira (Power BI, Qlik Sense, DRE, Contas a Pagar e Faturamento).
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fa-solid fa-chart-pie"></i> Ver Dashboards & Projetos
+                    </a>
+                    <a href="./public/document/CV CaioAraujo.pdf" download="CV-Caio-Araujo.pdf" class="btn-secondary">
+                        <i class="fa-solid fa-download"></i> Baixar Currículo
+                    </a>
+                </div>
+
+                <div class="hero-metrics">
+                    <div class="metric-card">
+                        <span class="metric-value">+3 Anos</span>
+                        <span class="metric-label">Experiência em BI, Dados & Finanças</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value">+500h</span>
+                        <span class="metric-label">Certificações em Dados, BI & Python</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value">End-to-End</span>
+                        <span class="metric-label">Do ETL (SQL/Python) ao Dashboard Executivo</span>
+                    </div>
+                </div>
+
+                <div class="stacks-content">
+                    <h3>Stack Principal:</h3>
+                    <ul class="stacks">
+                        <li>
+                            <div class="stack-item" data="Power BI & DAX">
+                                <img src="./svg/powerBi-icon.svg" alt="Power BI">
+                                <span>Power BI</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stack-item" data="PostgreSQL">
+                                <img src="./svg/postgresql-icon.svg" alt="PostgreSQL">
+                                <span>PostgreSQL</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stack-item" data="SQL Server">
+                                <img src="./svg/sqlServer-Icon.svg" alt="SQL Server">
+                                <span>SQL Server</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stack-item" data="Python (ETL & Data Science)">
+                                <img src="./svg/python-icon.svg" alt="Python">
+                                <span>Python</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stack-item" data="AWS Cloud">
+                                <img src="./svg/AWS-icon.svg" alt="AWS">
+                                <span>AWS</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stack-item" data="Qlik Sense">
+                                <img src="./svg/qlik-icon.png" alt="Qlik Sense">
+                                <span>Qlik Sense</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stack-item" data="MySQL & Oracle">
+                                <img src="./svg/mysql-icon.svg" alt="MySQL">
+                                <span>MySQL / SQL</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stack-item" data="Claude AI">
+                                <img src="./svg/claude-icon.svg" alt="Claude AI">
+                                <span>Claude</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stack-item" data="Google Antigravity">
+                                <img src="./svg/antigravity-icon.svg" alt="Google Antigravity">
+                                <span>Antigravity</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-      
-            <div class="links">
-              <a href="https://github.com/CaioGunz" target="_blank">
-                <img src="./svg/social-icon/logo-github.svg" alt="icon-github">
-              </a>
-              <a href="https://www.linkedin.com/in/caiobarbosadearaujo/" target="_blank">
-                <img src="./svg/social-icon/logo-linkedin.svg" alt="icon-linkin">
-              </a>
+
+            <div class="person-visual">
+                <div class="profile-card-glass">
+                    <div class="profile-header-bar">
+                        <div class="window-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="window-title">analytics_profile.sql</span>
+                    </div>
+
+                    <div class="profile-body">
+                        <div class="wrapper-profile-photo">
+                            <img class="profile-photo" src="./css/img/caio2.png" alt="Caio Barbosa de Araujo">
+                        </div>
+                        <div class="profile-meta">
+                            <h3>Caio Barbosa de Araujo</h3>
+                            <p><i class="fa-solid fa-briefcase"></i> Analista de Dados Financeiros</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Maringá – PR (Remoto / Híbrido)</p>
+                        </div>
+
+                        <div class="mini-kpi-grid">
+                            <div class="mini-kpi">
+                                <span class="mini-kpi-title">Foco Analítico</span>
+                                <span class="mini-kpi-val">Finanças & FP&A</span>
+                            </div>
+                            <div class="mini-kpi">
+                                <span class="mini-kpi-title">Arquitetura</span>
+                                <span class="mini-kpi-val">DW, ETL & Cloud</span>
+                            </div>
+                            <div class="mini-kpi">
+                                <span class="mini-kpi-title">Automação</span>
+                                <span class="mini-kpi-val">Python & IA (LLMs)</span>
+                            </div>
+                            <div class="mini-kpi">
+                                <span class="mini-kpi-title">Contábil & Fiscal</span>
+                                <span class="mini-kpi-val">DRE & Tributário</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links-bar">
+                            <a href="https://www.linkedin.com/in/caiobarbosadearaujo/" target="_blank" rel="noopener" class="social-btn">
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/CaioBarbAraujo" target="_blank" rel="noopener" class="social-btn">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="https://wa.me/5544997222786?text=Ol%C3%A1%20Caio%2C%20vi%20seu%20portf%C3%B3lio%20de%20Dados%20e%20gostaria%20de%20conversar!" target="_blank" rel="noopener" class="social-btn whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        
+        </div>
     </section>
-    <!-- End Person -->
 
-    <!-- About -->
+    <!-- About & Core Pillars -->
     <section id="about">
-        <div class="background-about">
-            <div class="img-wrapper">
-                <img src="./css/img/img2.jpg" alt="img2-notebook">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">SOBRE MIM & ESPECIALIDADES</span>
+                <h2>Visão Técnica de Engenharia + Visão Estratégica de Finanças</h2>
+                <p>Combino a base sólida de Engenharia de Software e Ciência de Dados com a formação em Ciências Contábeis para construir soluções analíticas que conversam diretamente com o resultado financeiro da empresa.</p>
             </div>
-        </div>
 
-        <div class="box-about">
-            <div class="section-subtitle">
-                <h2>
-                    <p>💻</p>
-                    <p><span>Analista</span>de Dados</p>
-                </h2>
-            </div>
-        
-            <h3>
-                Sou um Analista de Dados com experiência em
-                <p>Power BI, PostegreSql, SqlServer, AWS, Python e Qlik Sense</p>
-            </h3>
-            <h4>
-                Meu nome é Caio Araujo, tenho 23 anos, sou formado em Engenharia de Software e estou cursando pós-graduação em Ciência de Dados e Big Data pela PUC Minas. 
-                <br>
-                <br>
-                Tenho vivência em:
-                <br>
-                <br>
-                • Criação e manutenção de dashboards gerenciais e operacionais
-                <br>
-                • Automação de relatórios e análises para ganho de eficiência
-                <br>
-                • Integração, tratamento e modelagem de dados (ETL)
-                <br>
-                • Análises voltadas para performance, indicadores e suporte estratégico
-                <br>
-                <br>
-                Atualmente atuo como Analista de Dados na MSA TEC, em ambiente remoto, e estou em constante evolução técnica por meio de cursos.
-                <br>
-                <br>
-                Busco oportunidades onde dados sejam usados para gerar impacto real no negócio, eficiência operacional e melhor tomada de decisão.
-            </h4>
-            <h4>
-                Abaixo está o meu <p>currículo</p> para download.
-            </h4>
-            <div class="button-cta">
-                <a href="./public/document/CV CaioAraujo.pdf" download="CV-Caio-Araujo" aria-label="Baixar curriculo Caio Araujo">
-                    currículo
-                </a>
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h3>Inteligência Financeira & Contábil</h3>
+                    <p>Desenvolvimento de KPIs financeiros, acompanhamento de Contas a Pagar, Faturamento, Fluxo de Caixa, análise de DRE, margem de contribuição e impactos da Reforma Tributária.</p>
+                    <ul class="pillar-tags">
+                        <li>KPIs Financeiros</li>
+                        <li>DRE & Fluxo de Caixa</li>
+                        <li>Contas a Pagar</li>
+                        <li>Faturamento</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <h3>Business Intelligence & DataViz</h3>
+                    <p>Construção de dashboards executivos e operacionais de alta performance, utilizando storytelling com dados, DAX avançado, modelagem Star Schema e UX/UI aplicada no Figma.</p>
+                    <ul class="pillar-tags">
+                        <li>Power BI (DAX / M)</li>
+                        <li>Qlik Sense</li>
+                        <li>IBM Cognos</li>
+                        <li>Excel VBA & Sheets</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3>Engenharia de Dados, SQL & DW</h3>
+                    <p>Extração, transformação e carga (ETL), administração de Data Warehouse, otimização de queries complexas, views e procedures em bancos relacionais e infraestrutura em nuvem.</p>
+                    <ul class="pillar-tags">
+                        <li>PostgreSQL</li>
+                        <li>SQL Server</li>
+                        <li>Oracle & MySQL</li>
+                        <li>AWS (S3 / EC2)</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3>Automação com Python & IA Aplicada</h3>
+                    <p>Desenvolvimento de scripts em Python para automação de relatórios, pipelines de dados, Web Scraping e integração de Inteligência Artificial (Claude / LLMs) na otimização de processos.</p>
+                    <ul class="pillar-tags">
+                        <li>Python (Pandas / NumPy)</li>
+                        <li>Automação de ETL</li>
+                        <li>Claude & Antigravity</li>
+                        <li>Selenium & Scrapy</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <!-- End About -->
+
+    <!-- Experience & Education Timeline -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CURRÍCULO & TRAJETÓRIA</span>
+                <h2>Experiência Profissional e Formação Acadêmica</h2>
+                <p>Histórico consistente atuando em análise de dados financeiros, Business Intelligence, arquitetura de Data Warehouse e inteligência de mercado.</p>
+            </div>
+
+            <div class="resume-grid">
+                <!-- Coluna Experiência -->
+                <div class="resume-column">
+                    <h3 class="column-title"><i class="fa-solid fa-briefcase"></i> Experiência Profissional</h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item current">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <span class="timeline-date">06/2025 – Atual</span>
+                                    <span class="timeline-badge">Atual</span>
+                                </div>
+                                <h4>Analista de Dados Financeiros</h4>
+                                <span class="timeline-company">MSA RH</span>
+                                <ul>
+                                    <li>Desenvolvimento e manutenção de dashboards interativos em <strong>Power BI</strong> para visibilidade estratégica de indicadores financeiros e operacionais.</li>
+                                    <li>Extração, transformação e modelagem de dados com <strong>SQL (PostgreSQL e SQL Server)</strong> integrados à infraestrutura <strong>AWS</strong>.</li>
+                                    <li>Automação de rotinas de ETL e relatórios com <strong>Python</strong> e aplicação de <strong>Inteligência Artificial (Claude)</strong> para ganho de produtividade e precisão analítica.</li>
+                                    <li>Análises financeiras avançadas e gestão de KPIs de <strong>Contas a Pagar, Fluxo de Caixa e Faturamento</strong>.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <span class="timeline-date">12/2023 – 06/2025</span>
+                                </div>
+                                <h4>Analista de BI (Business Intelligence)</h4>
+                                <span class="timeline-company">Transpanorama</span>
+                                <ul>
+                                    <li>Desenvolvimento e sustentação de relatórios gerenciais e dashboards em <strong>Power BI e Qlik Sense</strong> para suporte à decisão estratégica.</li>
+                                    <li>Modelagem de dados e estruturação de pipelines ETL avançados em <strong>SQL (Oracle e SQL Server)</strong>.</li>
+                                    <li>Automação de processos analíticos e fluxos de atualização com <strong>Python</strong> e administração da arquitetura de <strong>Data Warehouse (DW)</strong>.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <span class="timeline-date">06/2023 – 11/2023</span>
+                                </div>
+                                <h4>Analista de Inteligência de Mercado</h4>
+                                <span class="timeline-company">Antenas Aquário</span>
+                                <ul>
+                                    <li>Estudos de inteligência de mercado e análises comerciais descritivas e preditivas para o planejamento estratégico.</li>
+                                    <li>Automação de geração e envio de relatórios analíticos integrando <strong>Python e consultas SQL (MySQL)</strong>.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <span class="timeline-date">03/2022 – 01/2023</span>
+                                </div>
+                                <h4>Estagiário de BI e Dados</h4>
+                                <span class="timeline-company">AMM / DiferenTI</span>
+                                <ul>
+                                    <li>Extração, transformação e visualização de dados gerenciais com <strong>IBM Cognos Analytics</strong>.</li>
+                                    <li>Suporte na estruturação de dados em nuvem (<strong>AWS S3 e EC2</strong>) e aplicação de Governança, Risco e Compliance (GRC).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Educação & Ferramentas -->
+                <div class="resume-column">
+                    <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> Formação Acadêmica</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <span class="timeline-date">2026 – 2030 (Cursando)</span>
+                                    <span class="timeline-badge finance">Contábil & Fiscal</span>
+                                </div>
+                                <h4>Bacharelado em Ciências Contábeis</h4>
+                                <span class="timeline-company">UNIPAR — Universidade Paranaense</span>
+                                <p class="timeline-desc">Aprofundamento em contabilidade societária, demonstrações financeiras (Balanço Patrimonial, DRE, DFC), controladoria, gestão tributária e análise de custos.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <span class="timeline-date">2025 – 2026</span>
+                                    <span class="timeline-badge data">Pós-Graduação</span>
+                                </div>
+                                <h4>Especialização em Ciência de Dados e Big Data</h4>
+                                <span class="timeline-company">PUC Minas</span>
+                                <p class="timeline-desc">Pós-graduação Lato Sensu focada em análise estatística, machine learning, arquitetura de Big Data, engenharia de dados e modelagem preditiva.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <span class="timeline-date">2020 – 2024</span>
+                                    <span class="timeline-badge tech">Concluído</span>
+                                </div>
+                                <h4>Bacharelado em Engenharia de Software</h4>
+                                <span class="timeline-company">UniCesumar</span>
+                                <p class="timeline-desc">Formação completa em engenharia e arquitetura de software, banco de dados relacionais, estrutura de dados, programação orientada a objetos (Python/Java) e governança de TI.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card de Download do CV -->
+                    <div class="cv-callout-card">
+                        <div class="cv-callout-info">
+                            <h4><i class="fa-solid fa-file-pdf"></i> Currículo Completo</h4>
+                            <p>Baixe a versão em PDF atualizada com todas as experiências, formações e competências técnicas.</p>
+                        </div>
+                        <a href="./public/document/CV CaioAraujo.pdf" download="CV-Caio-Araujo.pdf" class="btn-primary">
+                            Baixar Currículo <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section id="projects">
-        <div class="projects-title">
-            <h2>PROJETOS 🧩</h2>
-        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PORTFÓLIO PRÁTICO</span>
+                <h2>Dashboards de BI, Análises Financeiras & Projetos de Dados</h2>
+                <p>Explore relatórios interativos, painéis executivos de indicadores e soluções de automação e coleta de dados construídas com Power BI, SQL e Python.</p>
+            </div>
 
-        <div class="container-projects">
-            <div class="swiper mySwiper">
-                <!-- wrapper-projects -->
-                <div class="swiper-wrapper">
-                    <!--  content-project -->
-                    <!-- Projeto Dashboard Healthlab -->
-                    <div class="swiper-slide card-project">
-                        <div class="img-project">
-                            <a href="https://caiogunz.github.io/AnaliseHealthlab/" target="_blank">
-                                <img src="./css/img/DashHealthlab.png" alt="img-ChamadosSAC">
-                            </a>
-                        </div>
-        
-                        <span>Dashboard Faturamento Healthlab</span>
-                        <p>Esse dashboard faz a análise dos dados de Faturamento e clientes de uma empresa fictícia, foi criado uma tela de fundo no Figma, usado cores vivas e 
-                            atendido todos os requisitos para uma análise assertiva e de fácil entendimento. Esse dashboard faz parte do desafio da Xperiun. Para mais detalhes acesse o botão 'Analíse' em baixo.
-                        </p>
-        
-                        <div class="cta-project">
-                            <a href="https://github.com/CaioGunz/AnaliseHealthlab" target="_blank">
-                                Base de Dados
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="https://caiogunz.github.io/AnaliseHealthlab/" target="_blank">
-                                Análise
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-        
-                    </div>
-                    <!-- Projeto Dashboard Chamados Sac -->
-                    <div class="swiper-slide card-project">
-                        <div class="img-project">
-                            <a href="https://caiogunz.github.io/analiseChamadosSAC/" target="_blank">
-                                <img src="./css/img/DashChamadosSAC.png" alt="img-ChamadosSAC">
-                            </a>
-                        </div>
-        
-                        <span>Dashboard Chamados SAC</span>
-                        <p>Esse dashboard faz a análise dos dados de Chamados SAC de uma empresa fictícia, foi criado uma tela de fundo no Figma, usado cores vivas e 
-                            atendido todos os requisitos para uma análise assertiva e de fácil entendimento. Para mais detalhes acesse o botão 'Analíse' em baixo.
-                        </p>
-        
-                        <div class="cta-project">
-                            <a href="https://github.com/CaioGunz/analiseChamadosSAC" target="_blank">
-                                Base de Dados
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="https://caiogunz.github.io/analiseChamadosSAC/" target="_blank">
-                                Análise
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-        
-                    </div>
-                    <!-- Projeto Dashboard Recursos Humanos -->
-                    <div class="swiper-slide card-project">
-                        <div class="img-project">
-                            <a href="https://caiogunz.github.io/analiseRecursosHumanos/" target="_blank">
-                                <img src="./css/img/DashRecursosHumanos.png" alt="img-WebScraping">
-                            </a>
-                        </div>
-        
-                        <span>Dashboard Recursos Humanos</span>
-                        <p>Esse dashboard faz a análise dos dados de recursos humanos de uma empresa fictícia, foi criado uma tela de fundo no Figma, usado cores vivas e atendido todos os requisitos
-                            para uma análise assertiva e de fácil entendimento. Para mais detalhes acesse o botão 'Analíse' em baixo.
-                        </p>
-        
-                        <div class="cta-project">
-                            <a href="https://github.com/CaioGunz/analiseRecursosHumanos" target="_blank">
-                                Base de Dados
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="https://caiogunz.github.io/analiseRecursosHumanos/" target="_blank">
-                                Análise
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-        
-                    </div>
-                    <!-- Projeto Dashboard Logística -->
-                    <div class="swiper-slide card-project">
-                        <div class="img-project">
-                            <a href="https://caiogunz.github.io/DashLogistica/" target="_blank">
-                                <img src="./css/img/DashLogistica.png" alt="img-WebScraping">
-                            </a>
-                        </div>
-        
-                        <span>Dashboard Logística</span>
-                        <p>Esse dashboard faz a análise dos dados de logística de uma empresa fictícia, foi criado uma tela de fundo no Figma, usado cores vivas e atendido todos os requisitos
-                            para uma análise assertiva e de fácil entendimento. Para mais detalhes acesse o botão 'Analíse' em baixo.
-                        </p>
-        
-                        <div class="cta-project">
-                            <a href="https://github.com/CaioGunz/DashLogistica" target="_blank">
-                                Base de Dados
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="https://caiogunz.github.io/DashLogistica/" target="_blank">
-                                Análise
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-        
-                    </div>
-                    <!-- Projeto WebScraping E-commerce -->
-                    <div class="swiper-slide card-project">
-                        <div class="img-project">
-                            <a href="https://github.com/CaioGunz/coletaEcommerceAutomatica" target="_blank">
-                                <img src="./css/img/webscrapingMercadoLivre.png" alt="img-WebScraping">
-                            </a>
-                        </div>
-        
-                        <span>WebScraping E-commerce</span>
-                        <p>Esse projeto faz Web Scraping dos principais e-commerces do Brasil</p>
-        
-                        <div class="cta-project">
-                            <a href="https://github.com/CaioGunz/coletaEcommerceAutomatica" target="_blank">
-                                Código
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="https://caiogunz.github.io/coletaEcommerceAutomatica/" target="_blank">
-                                Documentação
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-        
-                    </div>
-                    <!-- Projeto  Buscador de CEP -->
-                    <div class="swiper-slide card-project">
-                        <div class="img-project">
-                            <a href="https://github.com/CaioGunz/BuscadorDeCep" target="_blank">
-                                <img src="./css/img/buscadorDeCEP.png" alt="img-buscadorDeCEP">
-                            </a>
-                        </div>
-        
-                        <span>Buscador de CEP</span>
-                        <p>Esse projeto faz a busca de CEPs do Brasil trazendo como dados: CEP, Endereço, Bairro, Cidade e UF. Ótimo para acoplar com sistemas de logística.</p>
-        
-                        <div class="cta-project">
-                            <a href="https://github.com/CaioGunz/BuscadorDeCep" target="_blank">
-                                Código
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="https://github.com/CaioGunz/BuscadorDeCep/blob/main/README.md" target="_blank">
-                                Documentação
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-        
-                    </div>
-                    <!-- Projeto Meus Arquivos de Estudo -->
-                    <div class="swiper-slide card-project">
-                        <div class="img-project">
-                            <a href="https://caiogunz.github.io/Study/" target="_blank">
-                                <img src="./css/img/estudosLogo.png" alt="img-estudosLogo">
-                            </a>
-                        </div>
-        
-                        <span>Meus Arquivos de Estudo</span>
-                        <p>Esse site é onde guardo tudo que estudo sobre profissional ou pessoal mesmo, se você quiser pode usar para seu aperfeiçoamento também.</p>
-        
-                        <div class="cta-project">
-                            <a href="https://github.com/CaioGunz/Study" target="_blank">
-                                Código
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="https://caiogunz.github.io/Study/" target="_blank">
-                                Documentação
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-        
-                    </div>
-                </div>
+            <!-- Filtros de Categoria -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Todos os Projetos (7)</button>
+                <button class="filter-btn" data-filter="finance">Finanças & Faturamento</button>
+                <button class="filter-btn" data-filter="bi">Dashboards & BI Operacional</button>
+                <button class="filter-btn" data-filter="engineering">Python, Automação & Dados</button>
+            </div>
+
+            <!-- Grid de Projetos -->
+            <div class="projects-grid">
                 
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-
-    </section>
-    <!-- End Projects -->
-
-    <!-- Certificats -->
-    <section id="certificat">
-            <div class="projects-title">
-                <h2>CERTIFICADOS 🎓</h2>
-            </div>
-    
-            <div class="container-projects">
-                <div class="swiper mySwiper">
-                    <!-- wrapper-projects -->
-                    <div class="swiper-wrapper">
-                        <!--  content-project -->
-                        <!-- Formação Power Bi Fundamentals -->
-                        <div class="swiper-slide card-project">
-                            <div class="img-project">
-                                <a href="https://app.xperiun.com/certificado/n9odk9b3pngnwyiixxum1en96" target="_blank">
-                                    <img src="./css/img/Badge -Trilha Power Bi Fundamentals.png" alt="img-badgePowerBiFundamentals">
-                                </a>
-                            </div>
-            
-                            <span>Formação Power Bi Fundamentals</span>
-                            <p>Certificado da formação de Power Bi Fundamentals pela plataforma Xperiun com 7 cursos e 1 Dashboard de DRE totalizando 35 Horas</p>
-            
-                            <div class="cta-project">
-                                <a href="https://app.xperiun.com/certificado/n9odk9b3pngnwyiixxum1en96" target="_blank">
-                                    Ver Certificado
-                                    <i class="fa-solid fa-certificate"></i>
-                                </a>
-                            </div>
-            
-                        </div>
-                        <!-- Formação Avançando em Data Science com Python -->
-                        <div class="swiper-slide card-project">
-                            <div class="img-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/8e94675c-1b8f-45a2-b041-8509d5e214a8?lang=pt_BR" target="_blank">
-                                    <img src="./css/img/certificadoAvançandoEmDataSciencePython.png" alt="img-certificadoDominandoPowerBi">
-                                </a>
-                            </div>
-            
-                            <span>Formação Avançando em Data Science com Python</span>
-                            <p>Certificado da Formação Avançando em Data Science com Python de 9 cursos com carga horária de 86 Horas</p>
-            
-                            <div class="cta-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/8e94675c-1b8f-45a2-b041-8509d5e214a8?lang=pt_BR" target="_blank">
-                                    Ver Certificado
-                                    <i class="fa-solid fa-certificate"></i>
-                                </a>
-                            </div>
-            
-                        </div>
-                        <!-- Formação Dominando o Power Bi -->
-                        <div class="swiper-slide card-project">
-                            <div class="img-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/1dd76ae3-4b75-4bf2-b96c-63bec11c8ebe?lang=pt_BR" target="_blank">
-                                    <img src="./css/img/CertificadoDominandoPowerBI.png" alt="img-certificadoDominandoPowerBi">
-                                </a>
-                            </div>
-            
-                            <span>Formação Dominando o Power Bi</span>
-                            <p>Certificado da Formação Dominando o Power BI de 6 cursos com carga horária de 55 Horas</p>
-            
-                            <div class="cta-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/1dd76ae3-4b75-4bf2-b96c-63bec11c8ebe?lang=pt_BR" target="_blank">
-                                    Ver Certificado
-                                    <i class="fa-solid fa-certificate"></i>
-                                </a>
-                            </div>
-            
-                        </div>
-                        <!-- Formação Power Bi -->
-                        <div class="swiper-slide card-project">
-                            <div class="img-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/522e3c47-347f-460c-82da-01e7e02aad6a?lang=pt_BR" target="_blank">
-                                    <img src="./css/img/certificadoPowerBi.png" alt="img-certificadoPowerBi">
-                                </a>
-                            </div>
-            
-                            <span>Formação Power Bi</span>
-                            <p>Certificado da Formação de Power BI de 8 cursos com carga horária de 72 Horas</p>
-            
-                            <div class="cta-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/522e3c47-347f-460c-82da-01e7e02aad6a?lang=pt_BR" target="_blank">
-                                    Ver Certificado
-                                    <i class="fa-solid fa-certificate"></i>
-                                </a>
-                            </div>
-            
-                        </div>
-                        <!-- Formação Python com POO -->
-                        <div class="swiper-slide card-project">
-                            <div class="img-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/3ce166b6-fcba-43bd-9d15-af94d331d838?lang=pt_BR" target="_blank">
-                                    <img src="./css/img/certificadoPythonPOO.png" alt="img-certificadoPythonPOO">
-                                </a>
-                            </div>
-            
-                            <span>Formação Python com POO</span>
-                            <p>Certificado da Formação de Python com POO de 3 cursos com carga horária de 25 Horas</p>
-            
-                            <div class="cta-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/3ce166b6-fcba-43bd-9d15-af94d331d838?lang=pt_BR" target="_blank">
-                                    Ver Certificado
-                                    <i class="fa-solid fa-certificate"></i>
-                                </a>
-                            </div>
-            
-                        </div>
-                        <!-- Formação Qlik Sense -->
-                        <div class="swiper-slide card-project">
-                            <div class="img-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/ea51abaf-c16b-4807-b2fe-5be7e6fd9eea?lang=pt_BR" target="_blank">
-                                    <img src="./css/img/certificadoQliksense.png" alt="img-certificadoQlikSense">
-                                </a>
-                            </div>
-            
-                            <span>Formação Qlik Sense</span>
-                            <p>Certificado da Formação de Qlik Sense de 6 cursos com carga horária de 81 Horas</p>
-            
-                            <div class="cta-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/ea51abaf-c16b-4807-b2fe-5be7e6fd9eea?lang=pt_BR" target="_blank">
-                                    Ver Certificado
-                                    <i class="fa-solid fa-certificate"></i>
-                                </a>
-                            </div>
-            
-                        </div>
-                        <!-- Formação Python para Data Science -->
-                        <div class="swiper-slide card-project">
-                            <div class="img-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/1cd3e155-461b-4c99-8f0d-e8d53f4a59c8?lang=pt_BR" target="_blank">
-                                    <img src="./css/img/certificadoPythonParaDataScience.png" alt="img-certificadoPPythonParaDataScience">
-                                </a>
-                            </div>
-            
-                            <span>Formação Python para Data Science</span>
-                            <p>Certificado da Formação de Python para Data Science de 8 cursos com carga horária de 69 Horas</p>
-            
-                            <div class="cta-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/1cd3e155-461b-4c99-8f0d-e8d53f4a59c8?lang=pt_BR" target="_blank">
-                                    Ver Certificado
-                                    <i class="fa-solid fa-certificate"></i>
-                                </a>
-                            </div>
-            
-                        </div>
-                        <!-- Formação Modelagem de dados -->
-                        <div class="swiper-slide card-project">
-                            <div class="img-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/22c393ac-4921-4cbd-b097-44f2cb69293e?lang=pt_BR" target="_blank">
-                                    <img src="./css/img/certificadoModelagemDados.png" alt="img-certificadoPPythonParaDataScience">
-                                </a>
-                            </div>
-            
-                            <span>Formação Modelagem de dados</span>
-                            <p>Certificado da Formação de Modelagem de dados de 4 cursos com carga horária de 33 Horas</p>
-            
-                            <div class="cta-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/22c393ac-4921-4cbd-b097-44f2cb69293e?lang=pt_BR" target="_blank">
-                                    Ver Certificado
-                                    <i class="fa-solid fa-certificate"></i>
-                                </a>
-                            </div>
-            
-                        </div>
-                        <!-- Formacao Data Analysis com Google Sheets -->
-                        <div class="swiper-slide card-project">
-                            <div class="img-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/97d42435-5b60-463a-97d7-d440ec53470c?lang=pt_BR" target="_blank">
-                                    <img src="./css/img/certificadoDataAnalysisGoogleSheets.png" alt="img-certificadoDataAnalysisGoogleSheets">
-                                </a>
-                            </div>
-            
-                            <span>Formação Data Analysis com Google Sheets</span>
-                            <p>Certificado da Formação de Data Analysis com Google Sheets de 4 cursos com carga horária de 35 Horas</p>
-            
-                            <div class="cta-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/97d42435-5b60-463a-97d7-d440ec53470c?lang=pt_BR" target="_blank">
-                                    Ver Certificado
-                                    <i class="fa-solid fa-certificate"></i>
-                                </a>
-                            </div>
-            
-                        </div>
-                        <!-- Formacao Excel VBA -->
-                        <div class="swiper-slide card-project">
-                            <div class="img-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/18f80fa5-fa32-4bd8-b54f-60759e1d300c?lang=pt_BR" target="_blank">
-                                    <img src="./css/img/certificadoExcelVBA.png" alt="img-certificadoExcelVBA">
-                                </a>
-                            </div>
-            
-                            <span>Formação Excel VBA</span>
-                            <p>Certificado da Formação Excel VBA de 8 cursos com carga horária de 78 Horas</p>
-                            <div class="cta-project">
-                                <a href="https://cursos.alura.com.br/degree/certificate/18f80fa5-fa32-4bd8-b54f-60759e1d300c?lang=pt_BR" target="_blank">
-                                    Ver Certificado
-                                    <i class="fa-solid fa-certificate"></i>
-                                </a>
-                            </div>
-            
-                        </div>
-                        
+                <!-- Projeto 1: Dashboard Faturamento Healthlab -->
+                <article class="project-card" data-category="finance bi">
+                    <div class="project-img-wrapper">
+                        <span class="project-category-badge finance">Financeiro & Comercial</span>
+                        <a href="https://caiobarbaraujo.github.io/AnaliseHealthlab/" target="_blank" rel="noopener">
+                            <img src="./css/img/DashHealthlab.png" alt="Dashboard Faturamento Healthlab">
+                        </a>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Faturamento & Receita</span>
+                            <span>Figma UI</span>
+                        </div>
+                        <h3>Dashboard de Faturamento & Clientes — Healthlab</h3>
+                        <p>Painel executivo desenvolvido para análise de receita, ticket médio, recorrência de clientes e sazonalidade horária de atendimento laboratorial. Estruturação completa de ETL, modelagem dimensional (Star Schema) e medidas DAX para diagnóstico financeiro.</p>
+                        <div class="cta-project">
+                            <a href="https://caiobarbaraujo.github.io/AnaliseHealthlab/" target="_blank" rel="noopener" class="btn-card-primary">
+                                Ver Análise Interativa <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/CaioBarbAraujo/AnaliseHealthlab" target="_blank" rel="noopener" class="btn-card-secondary">
+                                <i class="fa-brands fa-github"></i> Repositório
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 2: Dashboard Logística -->
+                <article class="project-card" data-category="bi finance">
+                    <div class="project-img-wrapper">
+                        <span class="project-category-badge bi">Operações & Custos</span>
+                        <a href="https://caiobarbaraujo.github.io/DashLogistica/" target="_blank" rel="noopener">
+                            <img src="./css/img/DashLogistica.png" alt="Dashboard Logística">
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>KPIs Logísticos</span>
+                            <span>OTIF & SLA</span>
+                            <span>Modelagem SQL</span>
+                        </div>
+                        <h3>Dashboard Executivo de Logística & Entregas</h3>
+                        <p>Monitoramento estratégico de eficiência logística, prazos de entrega (SLA/OTIF), custos de frete, desempenho por frota/região e gargalos operacionais. Permite identificar desvios rapidamente e otimizar a margem operacional.</p>
+                        <div class="cta-project">
+                            <a href="https://caiobarbaraujo.github.io/DashLogistica/" target="_blank" rel="noopener" class="btn-card-primary">
+                                Ver Análise Interativa <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/CaioBarbAraujo/DashLogistica" target="_blank" rel="noopener" class="btn-card-secondary">
+                                <i class="fa-brands fa-github"></i> Repositório
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 3: Dashboard Recursos Humanos -->
+                <article class="project-card" data-category="bi finance">
+                    <div class="project-img-wrapper">
+                        <span class="project-category-badge bi">People Analytics & Folha</span>
+                        <a href="https://caiobarbaraujo.github.io/analiseRecursosHumanos/" target="_blank" rel="noopener">
+                            <img src="./css/img/DashRecursosHumanos.png" alt="Dashboard Recursos Humanos">
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>People Analytics</span>
+                            <span>Headcount & Folha</span>
+                            <span>Turnover</span>
+                        </div>
+                        <h3>Dashboard de People Analytics & Custos de RH</h3>
+                        <p>Análise gerencial de Headcount, evolução salarial, custos com folha de pagamento, taxa de rotatividade (Turnover), contratações, desligamentos e perfil demográfico por departamento para tomada de decisão de RH e Finanças.</p>
+                        <div class="cta-project">
+                            <a href="https://caiobarbaraujo.github.io/analiseRecursosHumanos/" target="_blank" rel="noopener" class="btn-card-primary">
+                                Ver Análise Interativa <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/CaioBarbAraujo/analiseRecursosHumanos" target="_blank" rel="noopener" class="btn-card-secondary">
+                                <i class="fa-brands fa-github"></i> Repositório
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 4: Dashboard Chamados SAC -->
+                <article class="project-card" data-category="bi">
+                    <div class="project-img-wrapper">
+                        <span class="project-category-badge bi">Performance & SLA</span>
+                        <a href="https://caiobarbaraujo.github.io/analiseChamadosSAC/" target="_blank" rel="noopener">
+                            <img src="./css/img/DashChamadosSAC.png" alt="Dashboard Chamados SAC">
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>Customer Success</span>
+                            <span>TMA / TME</span>
+                            <span>Power Query</span>
+                        </div>
+                        <h3>Dashboard de Indicadores de Atendimento (SAC)</h3>
+                        <p>Controle de volumetria de chamados, cumprimento de SLA, Tempo Médio de Atendimento (TMA), satisfação do cliente (CSAT/NPS) e produtividade por equipe, estruturado com layout executivo no Figma.</p>
+                        <div class="cta-project">
+                            <a href="https://caiobarbaraujo.github.io/analiseChamadosSAC/" target="_blank" rel="noopener" class="btn-card-primary">
+                                Ver Análise Interativa <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/CaioBarbAraujo/analiseChamadosSAC" target="_blank" rel="noopener" class="btn-card-secondary">
+                                <i class="fa-brands fa-github"></i> Repositório
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 5: WebScraping E-commerce -->
+                <article class="project-card" data-category="engineering finance">
+                    <div class="project-img-wrapper">
+                        <span class="project-category-badge eng">Engenharia de Dados & Pricing</span>
+                        <a href="https://github.com/CaioBarbAraujo/coletaEcommerceAutomatica" target="_blank" rel="noopener">
+                            <img src="./css/img/webscrapingMercadoLivre.png" alt="WebScraping E-commerce">
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Web Scraping</span>
+                            <span>Inteligência de Preços</span>
+                            <span>ETL</span>
+                        </div>
+                        <h3>Automação de Coleta & Inteligência de Preços (E-commerce)</h3>
+                        <p>Pipeline automatizado em Python para extração, limpeza e estruturação de dados de preços e produtos nos principais e-commerces do Brasil, voltado para inteligência competitiva e precificação estratégica.</p>
+                        <div class="cta-project">
+                            <a href="https://caiobarbaraujo.github.io/coletaEcommerceAutomatica/" target="_blank" rel="noopener" class="btn-card-primary">
+                                Documentação <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/CaioBarbAraujo/coletaEcommerceAutomatica" target="_blank" rel="noopener" class="btn-card-secondary">
+                                <i class="fa-brands fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 6: Buscador de CEP -->
+                <article class="project-card" data-category="engineering">
+                    <div class="project-img-wrapper">
+                        <span class="project-category-badge eng">Integração de API</span>
+                        <a href="https://github.com/CaioBarbAraujo/BuscadorDeCep" target="_blank" rel="noopener">
+                            <img src="./css/img/buscadorDeCEP.png" alt="Buscador de CEP">
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>API REST</span>
+                            <span>Enriquecimento de Dados</span>
+                            <span>Logística</span>
+                        </div>
+                        <h3>Enriquecimento e Consulta de Dados Geográficos (CEP)</h3>
+                        <p>Solução para consulta e padronização automatizada de endereços, bairros, cidades e UF via integração de API, ideal para higienização cadastral e sistemas de roteirização logística.</p>
+                        <div class="cta-project">
+                            <a href="https://github.com/CaioBarbAraujo/BuscadorDeCep/blob/main/README.md" target="_blank" rel="noopener" class="btn-card-primary">
+                                Documentação <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/CaioBarbAraujo/BuscadorDeCep" target="_blank" rel="noopener" class="btn-card-secondary">
+                                <i class="fa-brands fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 7: Base de Conhecimento / Estudos -->
+                <article class="project-card" data-category="engineering">
+                    <div class="project-img-wrapper">
+                        <span class="project-category-badge eng">Base de Conhecimento</span>
+                        <a href="https://caiobarbaraujo.github.io/Study/" target="_blank" rel="noopener">
+                            <img src="./css/img/estudosLogo.png" alt="Repositório de Estudos em Dados">
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>SQL</span>
+                            <span>Python</span>
+                            <span>Data Science</span>
+                            <span>Documentação</span>
+                        </div>
+                        <h3>Portal de Documentação & Estudos Técnicos</h3>
+                        <p>Repositório centralizado e portal web onde documento anotações práticas, scripts de referência, consultas SQL, boas práticas de BI e resumos técnicos de Ciência de Dados e Engenharia.</p>
+                        <div class="cta-project">
+                            <a href="https://caiobarbaraujo.github.io/Study/" target="_blank" rel="noopener" class="btn-card-primary">
+                                Acessar Portal <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/CaioBarbAraujo/Study" target="_blank" rel="noopener" class="btn-card-secondary">
+                                <i class="fa-brands fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificat">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">EDUCAÇÃO CONTINUADA</span>
+                <h2>Certificações & Formações Técnicas</h2>
+                <p>Mais de 560 horas em formações práticas focadas em Power BI (incluindo DRE Financeira), Ciência de Dados com Python, Modelagem de Dados, Qlik Sense e Excel VBA.</p>
+            </div>
+
+            <div class="container-projects">
+                <div class="swiper certSwiper">
+                    <div class="swiper-wrapper">
+                        
+                        <!-- Formação Power BI Fundamentals (DRE) -->
+                        <div class="swiper-slide cert-card">
+                            <div class="cert-img">
+                                <a href="https://app.xperiun.com/certificado/n9odk9b3pngnwyiixxum1en96" target="_blank" rel="noopener">
+                                    <img src="./css/img/Badge -Trilha Power Bi Fundamentals.png" alt="Formação Power BI Fundamentals - Xperiun">
+                                </a>
+                            </div>
+                            <div class="cert-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Xperiun (Data Driven)</span>
+                                    <span class="cert-hours"><i class="fa-regular fa-clock"></i> 35h</span>
+                                </div>
+                                <h3>Trilha Power BI Fundamentals & Dashboard de DRE</h3>
+                                <p>Formação completa com 7 módulos práticos e construção de Dashboard Financeiro de DRE (Demonstração do Resultado do Exercício).</p>
+                                <a href="https://app.xperiun.com/certificado/n9odk9b3pngnwyiixxum1en96" target="_blank" rel="noopener" class="cert-link">
+                                    Verificar Credencial <i class="fa-solid fa-certificate"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Formação Avançando em Data Science com Python -->
+                        <div class="swiper-slide cert-card">
+                            <div class="cert-img">
+                                <a href="https://cursos.alura.com.br/degree/certificate/8e94675c-1b8f-45a2-b041-8509d5e214a8?lang=pt_BR" target="_blank" rel="noopener">
+                                    <img src="./css/img/certificadoAvançandoEmDataSciencePython.png" alt="Formação Avançando em Data Science com Python">
+                                </a>
+                            </div>
+                            <div class="cert-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Alura</span>
+                                    <span class="cert-hours"><i class="fa-regular fa-clock"></i> 86h</span>
+                                </div>
+                                <h3>Formação Avançando em Data Science com Python</h3>
+                                <p>Trilha avançada com 9 cursos abordando análise exploratória, estatística, visualização de dados e modelagem preditiva com Python.</p>
+                                <a href="https://cursos.alura.com.br/degree/certificate/8e94675c-1b8f-45a2-b041-8509d5e214a8?lang=pt_BR" target="_blank" rel="noopener" class="cert-link">
+                                    Verificar Credencial <i class="fa-solid fa-certificate"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Formação Dominando o Power BI -->
+                        <div class="swiper-slide cert-card">
+                            <div class="cert-img">
+                                <a href="https://cursos.alura.com.br/degree/certificate/1dd76ae3-4b75-4bf2-b96c-63bec11c8ebe?lang=pt_BR" target="_blank" rel="noopener">
+                                    <img src="./css/img/CertificadoDominandoPowerBI.png" alt="Formação Dominando o Power BI">
+                                </a>
+                            </div>
+                            <div class="cert-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Alura</span>
+                                    <span class="cert-hours"><i class="fa-regular fa-clock"></i> 55h</span>
+                                </div>
+                                <h3>Formação Dominando o Power BI</h3>
+                                <p>Especialização em 6 cursos focados em DAX avançado, Power Query (Linguagem M), modelagem dimensional e governança no Power BI Service.</p>
+                                <a href="https://cursos.alura.com.br/degree/certificate/1dd76ae3-4b75-4bf2-b96c-63bec11c8ebe?lang=pt_BR" target="_blank" rel="noopener" class="cert-link">
+                                    Verificar Credencial <i class="fa-solid fa-certificate"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Formação Power BI -->
+                        <div class="swiper-slide cert-card">
+                            <div class="cert-img">
+                                <a href="https://cursos.alura.com.br/degree/certificate/522e3c47-347f-460c-82da-01e7e02aad6a?lang=pt_BR" target="_blank" rel="noopener">
+                                    <img src="./css/img/certificadoPowerBi.png" alt="Formação Power BI">
+                                </a>
+                            </div>
+                            <div class="cert-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Alura</span>
+                                    <span class="cert-hours"><i class="fa-regular fa-clock"></i> 72h</span>
+                                </div>
+                                <h3>Formação Business Intelligence com Power BI</h3>
+                                <p>Formação completa com 8 cursos cobrindo desde a extração e tratamento de dados até a criação de dashboards corporativos.</p>
+                                <a href="https://cursos.alura.com.br/degree/certificate/522e3c47-347f-460c-82da-01e7e02aad6a?lang=pt_BR" target="_blank" rel="noopener" class="cert-link">
+                                    Verificar Credencial <i class="fa-solid fa-certificate"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Formação Modelagem de Dados -->
+                        <div class="swiper-slide cert-card">
+                            <div class="cert-img">
+                                <a href="https://cursos.alura.com.br/degree/certificate/22c393ac-4921-4cbd-b097-44f2cb69293e?lang=pt_BR" target="_blank" rel="noopener">
+                                    <img src="./css/img/certificadoModelagemDados.png" alt="Formação Modelagem de Dados">
+                                </a>
+                            </div>
+                            <div class="cert-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Alura</span>
+                                    <span class="cert-hours"><i class="fa-regular fa-clock"></i> 33h</span>
+                                </div>
+                                <h3>Formação Modelagem de Dados</h3>
+                                <p>Modelagem conceitual, lógica e física, normalização de bancos de dados relacionais e estruturação para ambientes analíticos.</p>
+                                <a href="https://cursos.alura.com.br/degree/certificate/22c393ac-4921-4cbd-b097-44f2cb69293e?lang=pt_BR" target="_blank" rel="noopener" class="cert-link">
+                                    Verificar Credencial <i class="fa-solid fa-certificate"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Formação Qlik Sense -->
+                        <div class="swiper-slide cert-card">
+                            <div class="cert-img">
+                                <a href="https://cursos.alura.com.br/degree/certificate/ea51abaf-c16b-4807-b2fe-5be7e6fd9eea?lang=pt_BR" target="_blank" rel="noopener">
+                                    <img src="./css/img/certificadoQliksense.png" alt="Formação Qlik Sense">
+                                </a>
+                            </div>
+                            <div class="cert-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Alura</span>
+                                    <span class="cert-hours"><i class="fa-regular fa-clock"></i> 81h</span>
+                                </div>
+                                <h3>Formação Qlik Sense</h3>
+                                <p>6 cursos práticos sobre scripts de carga, Set Analysis, modelagem associativa e construção de painéis analíticos no Qlik Sense.</p>
+                                <a href="https://cursos.alura.com.br/degree/certificate/ea51abaf-c16b-4807-b2fe-5be7e6fd9eea?lang=pt_BR" target="_blank" rel="noopener" class="cert-link">
+                                    Verificar Credencial <i class="fa-solid fa-certificate"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Formação Python para Data Science -->
+                        <div class="swiper-slide cert-card">
+                            <div class="cert-img">
+                                <a href="https://cursos.alura.com.br/degree/certificate/1cd3e155-461b-4c99-8f0d-e8d53f4a59c8?lang=pt_BR" target="_blank" rel="noopener">
+                                    <img src="./css/img/certificadoPythonParaDataScience.png" alt="Formação Python para Data Science">
+                                </a>
+                            </div>
+                            <div class="cert-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Alura</span>
+                                    <span class="cert-hours"><i class="fa-regular fa-clock"></i> 69h</span>
+                                </div>
+                                <h3>Formação Python para Data Science</h3>
+                                <p>8 cursos focados em manipulação de dados com Pandas, NumPy, tratamento de bases complexas e visualização com Matplotlib/Seaborn.</p>
+                                <a href="https://cursos.alura.com.br/degree/certificate/1cd3e155-461b-4c99-8f0d-e8d53f4a59c8?lang=pt_BR" target="_blank" rel="noopener" class="cert-link">
+                                    Verificar Credencial <i class="fa-solid fa-certificate"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Formação Excel VBA -->
+                        <div class="swiper-slide cert-card">
+                            <div class="cert-img">
+                                <a href="https://cursos.alura.com.br/degree/certificate/18f80fa5-fa32-4bd8-b54f-60759e1d300c?lang=pt_BR" target="_blank" rel="noopener">
+                                    <img src="./css/img/certificadoExcelVBA.png" alt="Formação Excel VBA">
+                                </a>
+                            </div>
+                            <div class="cert-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Alura</span>
+                                    <span class="cert-hours"><i class="fa-regular fa-clock"></i> 78h</span>
+                                </div>
+                                <h3>Formação Excel Avançado & Automação com VBA</h3>
+                                <p>8 cursos voltados à automação de planilhas financeiras, criação de macros em VBA, relatórios dinâmicos e integração de processos.</p>
+                                <a href="https://cursos.alura.com.br/degree/certificate/18f80fa5-fa32-4bd8-b54f-60759e1d300c?lang=pt_BR" target="_blank" rel="noopener" class="cert-link">
+                                    Verificar Credencial <i class="fa-solid fa-certificate"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Formação Data Analysis com Google Sheets -->
+                        <div class="swiper-slide cert-card">
+                            <div class="cert-img">
+                                <a href="https://cursos.alura.com.br/degree/certificate/97d42435-5b60-463a-97d7-d440ec53470c?lang=pt_BR" target="_blank" rel="noopener">
+                                    <img src="./css/img/certificadoDataAnalysisGoogleSheets.png" alt="Formação Data Analysis com Google Sheets">
+                                </a>
+                            </div>
+                            <div class="cert-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Alura</span>
+                                    <span class="cert-hours"><i class="fa-regular fa-clock"></i> 35h</span>
+                                </div>
+                                <h3>Formação Data Analysis com Google Sheets</h3>
+                                <p>Análise de dados em nuvem, funções avançadas (QUERY, ARRAYFORMULA), tabelas dinâmicas e indicadores no ecossistema Google.</p>
+                                <a href="https://cursos.alura.com.br/degree/certificate/97d42435-5b60-463a-97d7-d440ec53470c?lang=pt_BR" target="_blank" rel="noopener" class="cert-link">
+                                    Verificar Credencial <i class="fa-solid fa-certificate"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Formação Python com POO -->
+                        <div class="swiper-slide cert-card">
+                            <div class="cert-img">
+                                <a href="https://cursos.alura.com.br/degree/certificate/3ce166b6-fcba-43bd-9d15-af94d331d838?lang=pt_BR" target="_blank" rel="noopener">
+                                    <img src="./css/img/certificadoPythonPOO.png" alt="Formação Python com POO">
+                                </a>
+                            </div>
+                            <div class="cert-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Alura</span>
+                                    <span class="cert-hours"><i class="fa-regular fa-clock"></i> 25h</span>
+                                </div>
+                                <h3>Formação Python com Orientação a Objetos</h3>
+                                <p>Arquitetura limpa e modularização de scripts Python para projetos escaláveis de automação e engenharia de dados.</p>
+                                <a href="https://cursos.alura.com.br/degree/certificate/3ce166b6-fcba-43bd-9d15-af94d331d838?lang=pt_BR" target="_blank" rel="noopener" class="cert-link">
+                                    Verificar Credencial <i class="fa-solid fa-certificate"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next cert-next"></div>
+                    <div class="swiper-button-prev cert-prev"></div>
+                    <div class="swiper-pagination cert-pagination"></div>
                 </div>
             </div>
-    
+        </div>
     </section>
-    <!-- End Projects -->
 
-    <!-- Contacts -->
+    <!-- Contacts Section -->
     <section id="contacts">
-        <div class="contact-icon-content">
-            <h2>Contato 📞</h2>
-        </div>
-
-        <div class="contact-icons-wrapper">
-            <div class="contact-icon-content">
-                <div class="contact-icon">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                </div>
-                <div class="contact-info">
-                    <span>Localização</span>
-                    <p>Maringá, Brasil</p>
-                </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CONTATO & CONEXÃO</span>
+                <h2>Vamos Conversar Sobre Dados, BI e Finanças?</h2>
+                <p>Estou disponível para conexões profissionais, oportunidades na área de Dados/BI/Finanças e projetos estratégicos.</p>
             </div>
 
-            <div class="contact-icon-content">
-                <div class="contact-icon">
-                    <i class="fa-solid fa-envelope-open-text"></i>
+            <div class="contact-cards-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <div class="contact-info">
+                        <span>E-mail Direto</span>
+                        <a href="mailto:caiobarbosa2404@hotmail.com">
+                            caiobarbosa2404@hotmail.com
+                        </a>
+                    </div>
                 </div>
-                <div class="contact-info">
-                    <span>E-mail</span>
-                    <a href="/">
-                        caiobarbosa2404@hotmail.com
-                    </a>
-                </div>
-            </div>
 
-            <div class="contact-icon-content">
-                <div class="contact-icon">
-                    <i class="fa-solid fa-phone"></i>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-info">
+                        <span>Telefone & WhatsApp</span>
+                        <a href="https://wa.me/5544997222786?text=Ol%C3%A1%20Caio%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio!" target="_blank" rel="noopener">
+                            (44) 99722-2786 — Iniciar conversa
+                        </a>
+                    </div>
                 </div>
-                <div class="contact-info">
-                    <span>Telefone</span>
-                    <a href="https://wa.me/5544997222786?text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+de+seu+site%21%21" target="_blank">
-                        Entre em contato no WhatsApp
-                    </a>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="contact-info">
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/caiobarbosadearaujo/" target="_blank" rel="noopener">
+                            linkedin.com/in/caiobarbosadearaujo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div class="contact-info">
+                        <span>Localização</span>
+                        <p>Maringá – PR, Brasil (Atuação Remota ou Presencial)</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Contacts -->
 
     <!-- Footer -->
-    <section id="footer">
-        <div class="container-footer">
-            <h2>Feito com ❤️ por</h2>
-            <h3>Caio Araujo © 2026</h3>
+    <footer id="footer">
+        <div class="container container-footer">
+            <div class="footer-brand">
+                <strong>Caio Barbosa de Araujo</strong>
+                <span>Analista de Dados Financeiros & Business Intelligence</span>
+            </div>
+            <div class="footer-copy">
+                <p>© 2026 Caio Araujo. Todos os direitos reservados.</p>
+            </div>
         </div>
-    </section>
-    <!-- End Footer -->
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
